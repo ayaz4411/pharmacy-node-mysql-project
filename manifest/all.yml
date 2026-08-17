@@ -100,7 +100,7 @@ metadata:
   namespace: webapps
 type: Opaque
 data:
-  DB_USER: cm9vdA==
+  DB_USER: cGhhcm1hY3lfdXNlcg==
   DB_PASSWORD: QWRtaW5AMTIzIw==
 
 ---
