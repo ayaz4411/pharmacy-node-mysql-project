@@ -48,10 +48,13 @@ spec:
             initialDelaySeconds: 10
             periodSeconds: 5
 
-          {{- with .Values.resources }}
           resources:
-            {{- toYaml . | nindent 12 }}
-          {{- end }}
+            requests:
+              cpu: "100m"
+              memory: "250Mi"
+            limits:
+              cpu: "500m"
+              memory: "500Mi"
 
           {{- with .Values.volumeMounts }}
           volumeMounts:
