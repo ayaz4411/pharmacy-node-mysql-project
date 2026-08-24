@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "pharmacy.fullname" . }}
+  name: {{ include "helm_files.fullname" . }}
   labels:
-    {{- include "pharmacy.labels" . | nindent 4 }}
+    {{- include "helm_files.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -12,4 +12,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    {{- include "pharmacy.selectorLabels" . | nindent 4 }}
+    {{- include "helm_files.selectorLabels" . | nindent 4 }}
