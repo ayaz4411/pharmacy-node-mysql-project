@@ -43,6 +43,9 @@ config:
 
 # Database credentials
 # DO NOT put real production credentials in Git.
+# Application name
+app:
+  name: pharmacy
 secret:
   DB_USER: "YWRtaW4="
   DB_PASSWORD: "cGhhcm1hY3lfdXNlcg=="
