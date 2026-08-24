@@ -47,8 +47,8 @@ config:
 app:
   name: pharmacy
 secret:
-  DB_USER: "YWRtaW4="
-  DB_PASSWORD: "cGhhcm1hY3lfdXNlcg=="
+  username: "YWRtaW4="
+  password: "cGhhcm1hY3lfdXNlcg=="
 
 # Resource requests and limits
 resources:
