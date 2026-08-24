@@ -37,7 +37,7 @@ service:
 
 # Database configuration
 config:
-  DB_HOST: "private_ip"
+  DB_HOST: "172.31.40.117"
   DB_PORT: "3306"
   DB_NAME: "pharmacy"
 
